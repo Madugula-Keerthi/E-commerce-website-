@@ -1,0 +1,130 @@
+/* General Styles */
+.mainp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cont {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Toggle Button Styles */
+  .togg {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  button {
+    padding: 0.8rem 1.2rem;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button.active {
+    background-color: #007bff;
+  }
+  
+  button.active:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .error {
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Item List Styles */
+  .cont-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cont-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cont-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .cont-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .cont-info h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .cont-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .delete-button:focus {
+    outline: none;
+  }
+  
+  /* No Items Found Message */
+  p {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+    }

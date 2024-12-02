@@ -1,0 +1,135 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the Dairy and Eggs page */
+.DairyAndEggs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    background-color: #FFD54F; /* Light yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #6D4C41; /* Chocolate brown for text */
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.header-text {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+/* Dairy items grid container */
+.dairy-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Each dairy item styling */
+.dairy-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+
+.dairy-item:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dairy-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFD54F;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6D4C41;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #FF6F00;
+    margin: 5px 0;
+}
+
+/* Button styling */
+button {
+    background-color: #FFD54F;
+    color: #6D4C41;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC107; /* Darker yellow on hover */
+    color: #4E342E; /* Darker brown */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 28px;
+    }
+
+    .dairy-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text {
+        font-size: 24px;
+    }
+
+    .dairy-container {
+        grid-template-columns: 1fr;
+    }
+
+    .item-name {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

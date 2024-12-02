@@ -1,0 +1,116 @@
+/* Updated Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff9b82; /* Vibrant orange background */
+  padding: 20px 30px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.navbar-brand a {
+  font-size: 35px;
+  color: #4caf50; /* Green color for branding */
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu a {
+  margin: 0 20px;
+  color: black; /* Orange for menu links */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-menu a:hover {
+  color: #ff5722; /* Darker orange for hover effect */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid #ffa726; /* Orange border */
+  border-radius: 25px;
+  width: 0; /* Start with hidden width */
+  transition: all 0.4s ease;
+  opacity: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+}
+
+.search-input.show {
+  width: 250px; /* Expand width when visible */
+  opacity: 1;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 8px 20px;
+  background-color: #4caf50; /* Green button */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #388e3c; /* Darker green for hover */
+  transform: scale(1.05);
+}
+
+/* Cart Count Styling */
+.navbar-menu a:last-child {
+  background-color: #fdd835; /* Vibrant yellow background for cart */
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-menu a:last-child:hover {
+  background-color: #fbc02d; /* Darker yellow for hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-menu a {
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  .search-input {
+    width: 200px;
+  }
+}

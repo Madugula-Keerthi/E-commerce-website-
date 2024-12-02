@@ -1,0 +1,102 @@
+/* General Styles for the Page */
+.full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contt {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .fg {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  input,
+  select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type='text'],
+  input[type='url'],
+  input[type='number'] {
+    width: 100%;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 0.8rem;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Message Styles */
+  .message {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  .success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .error {
+    background-color: #dc3545;
+    color: white;
+}

@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 150px 50px 50px 50px;
+}
+
+.container {
+  height: 225px;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10%;
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.309);
+  padding-top: 10px;
+  position: relative; /* Ensure text stays contained */
+}
+
+.container b {
+  font-size: 20px; /* Adjust font size */
+  display: block; /* Ensure the text is treated as block-level */
+  margin-top: 10px;
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Prevent text wrapping */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+
+.container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.602);
+}
+
+.link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}

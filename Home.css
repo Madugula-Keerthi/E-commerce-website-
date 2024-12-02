@@ -1,0 +1,66 @@
+/* Home Container: Flex Layout */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height */
+    padding: 0 50px; /* Add some padding for spacing */
+    background-color: #f8f8f8; /* Light background for a clean look */
+  }
+  
+  /* Text Section */
+  .text-section {
+    flex: 1; /* Take up half of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-section h1 {
+    font-size: 3rem; /* Large text for emphasis */
+    font-family: 'Poppins', sans-serif;
+    color: #4caf50; /* Green color for a fresh look */
+    line-height: 1.5; /* Spacing between lines */
+    font-weight: bold;
+  }
+  
+  /* Image Section */
+  .image-section {
+    flex: 1; /* Take up half of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .groceries-image {
+    width: 80%; /* Responsive image size */
+    max-width: 500px; /* Ensure the image doesn't get too large */
+    border-radius: 20px; /* Slight rounding for aesthetics */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Stack text and image */
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .text-section,
+    .image-section {
+      flex: unset;
+      width: 100%;
+    }
+  
+    .text-section h1 {
+      font-size: 2rem; /* Adjust text size for smaller screens */
+    }
+  
+    .groceries-image {
+      width: 100%; /* Adjust image size for smaller screens */
+      max-width: 300px;
+    }
+  }
+  
